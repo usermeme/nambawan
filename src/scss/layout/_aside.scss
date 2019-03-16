@@ -1,0 +1,48 @@
+aside {
+    position: fixed;
+    top: 0;
+    left: calc(78px - 100vw);
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside-menu {
+        display: flex;
+        height: 100vh;
+        max-width: 78px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+
+        figure {
+            cursor: pointer;
+            margin-top: 5vh;
+        }
+
+        .social {
+            height: 13em;
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: repeat(2, 6.25em);
+            grid-row-gap: 35px;
+
+            a {
+                transform-origin: 40% 50%;
+                transform: rotate(-90deg);
+                width: 6.25em;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+
+    a {
+        color: #ffffff;
+        text-decoration: none; 
+    }
+    
+    aside {
+        figcaption {
+            color: #000000;
+        }
+
+        a,
+        span{
+            color: $primaryColor;
+        }
+
+    }
+
+    header {
+
+        .callback {
+            text-align: right;
+            
+            a {
+                font-weight: 800;
+                font-size: 1.4em;
+            }
+            
+            p {
+                margin-top: 10px;
+                font-weight: 600;
+                font-size: 0.9em;
+                text-transform: uppercase;
+            }
+        }
+        
+        .header-information {
+            font-weight: 700;
+
+            p {
+                font-size: 1.75em;
+                color: $secondaryColor;
+            }
+    
+            h2 {
+                font-size: 7vh;
+                max-width: 70%;
+            }
+        }
+    }
+}

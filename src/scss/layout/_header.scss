@@ -1,0 +1,21 @@
+header {
+    height: 100vh;
+    background: scroll #000000 url(../img/mountain@1X.png) 70% center no-repeat;
+    background-size: cover;
+
+    .heading {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-information {
+        margin: 20vh 0; 
+    }
+
+    .navigation-line {
+        position: fixed;
+        top: calc(50vh - 50px);
+        right: 30px;
+    }
+}
