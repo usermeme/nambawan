@@ -1,0 +1,19 @@
+button {
+    position: relative;
+    cursor: pointer;
+    background-color: $secondaryColor;
+    width: 270px;
+    height: 63px;
+    border: none;
+    align-self: flex-end;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color:  rgba($secondaryColor, 0.8);
+    }
+
+    svg {
+        position: relative;
+        top: 7px;
+    }
+}
