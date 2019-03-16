@@ -1,0 +1,77 @@
+#card {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+    .container {
+        flex: 0 0 $containerWidth/2;
+        margin: 0;
+    }
+    
+    .video {
+        flex: 1 0 50%;
+        background: scroll #000000 url(../img/Layer@1X.png) center center no-repeat;
+        background-size: cover; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        a {
+            color: $secondaryColor;
+            font-size: 5em;
+        }
+
+        figcaption {
+            font-size: 1.25em;
+            color: #ffffff;
+            font-weight: 700;
+        }
+    }
+
+    .card-information {
+        flex: 1 0 50%; 
+        display: flex;
+        justify-content: flex-start;
+
+        .container {
+            padding: 0 15px 0 0;
+
+            .card-data {
+                
+                padding-left: 8%; 
+
+                h2 {
+                    padding: 20vh 0 10vh;
+
+                    @media screen and (max-height: 750px ) {
+                        padding: 15vh 0 7vh;
+                    }
+                }
+
+                .card-items {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5vh;
+
+                    figure {
+                        flex: 0 0 256px;
+                        height: 197px;
+                        background-color: #f2f2f2;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+
+                        figcaption {
+                            padding-top: 20px;
+                            width: 94%;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
