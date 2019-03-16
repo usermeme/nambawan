@@ -1,21 +1,44 @@
 header {
-    height: 100vh;
     background: scroll #000000 url(../img/mountain@1X.png) 70% center no-repeat;
     background-size: cover;
 
-    .heading {
-        margin-top: 5vh;
+    .container {
+        height: 100vh;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+
+        .heading {
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .header-information {
+            flex: 1;
+        }
+    
+        .header-activity {
+            margin: 15vh 0; 
+    
+            p {
+                margin-bottom: 35px;
+            }
+        }
+    
+        .about {
+            max-width: 853px;
+            display: flex;
+            justify-content: space-between;
+    
+            .about__item {
+                flex: 0 0 250px;
+                border-bottom: 1px solid #ffffff;
+    
+                p {
+                    padding-bottom: 15px;
+                }
+            }
+        }
     }
 
-    .header-information {
-        margin: 20vh 0; 
-    }
-
-    .navigation-line {
-        position: fixed;
-        top: calc(50vh - 50px);
-        right: 30px;
-    }
 }
