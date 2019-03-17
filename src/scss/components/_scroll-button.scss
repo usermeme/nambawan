@@ -1,9 +1,10 @@
-button {
+.scroll-button {
     position: relative;
     cursor: pointer;
     background-color: $secondaryColor;
     width: 270px;
-    height: 63px;
+    line-height: 63px;
+    text-align: center;
     border: none;
     align-self: flex-end;
     transition: all 0.3s ease;
