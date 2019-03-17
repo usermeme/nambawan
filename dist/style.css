@@ -188,6 +188,9 @@ body {
     font-weight: 700; }
   body .color {
     color: #10e08b; }
+  body aside nav a {
+    text-align: justify;
+    font-size: 2em; }
   body aside figure figcaption {
     color: #000000;
     -webkit-transition: all 0.3s ease;
@@ -316,7 +319,11 @@ aside {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center; }
+  text-align: center;
+  z-index: 100;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   aside nav {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -330,6 +337,8 @@ aside {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    aside nav ul li {
+      padding: 2vh 0; }
   aside .aside-menu {
     display: -webkit-box;
     display: -ms-flexbox;
