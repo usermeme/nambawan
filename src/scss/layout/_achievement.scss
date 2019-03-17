@@ -1,0 +1,59 @@
+#achievement {
+
+    h2 {
+        margin: 12vh 0;
+    }
+
+    .achievement-data {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 20vh;
+
+        .achievement-text-item {
+            h3 {
+                padding-top: 107px;
+                display: inline-block;
+                max-width: 260px;
+            }
+        }
+
+        .achievement-slider-item {
+            
+            figcaption {
+                width: 15em;
+                margin: 21px auto 0;
+            }
+
+            .achievement-item__information {
+                position: relative;
+    
+                img {
+                    max-width: 76.3%;
+                }
+    
+                .achievement__slider-counter {
+                    position: absolute;
+                    top: 0;
+                    left: -1.5em;
+                    transform-origin: 100% 0;
+                    transform: rotate(-90deg);
+                }
+    
+                .achievement-slider-item__description {
+                    position: absolute;
+                    bottom: 0;
+                    right: -2.5em;
+                    transform-origin: 10% 0;
+                    transform: rotate(-90deg);
+                }
+    
+                .slider-buttons {
+                    position: absolute;
+                    top: 0;
+                    right: 36px;
+                }
+            }
+        }
+    }
+}
