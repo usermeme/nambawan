@@ -100,7 +100,7 @@ body {
         }
 
         .card-information {
-            
+
             p {
                 font-size: 1.75em;
                 line-height: 1.3em;
@@ -134,5 +134,18 @@ body {
             }
         }
 
+    }
+
+    footer {
+        color: #ffffff;    
+
+        p:first-child {
+            font-weight: 800;
+        }
+
+        p:last-child {
+            font-size: 1.75em;
+            font-weight: 300;
+        }
     }
 }
