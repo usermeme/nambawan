@@ -27,6 +27,17 @@ aside {
         figure {
             cursor: pointer;
             margin-top: 5vh;
+
+            svg {
+               transition: all 0.3s ease;
+            }
+
+            &:hover {
+                svg {
+                    fill: $secondaryColor;
+                    transform: scale(1.2);
+                }
+            }
         }
 
         .social {
@@ -44,5 +55,22 @@ aside {
                 justify-content: space-between;
             }
         }
+    }
+
+    @media screen and (max-width: 850px) {
+        left: calc(50px - 100vw);
+
+        .aside-menu {
+            max-width: 50px;
+
+
+            .social {
+
+                a {
+                    transform-origin: 25% 50%;
+                }
+            }
+        }
+
     }
 }

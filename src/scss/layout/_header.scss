@@ -15,6 +15,10 @@ header {
     
         .header-information {
             flex: 1;
+
+            h2 {
+                max-width: 90%;
+            }
         }
     
         .header-activity {
@@ -22,6 +26,14 @@ header {
     
             p {
                 margin-bottom: 35px;
+            }
+
+            @media screen and (max-height: 500px) {
+                margin: 5vh 0;
+                
+                p {
+                    margin-bottom: 2vh;
+                }
             }
         }
     
@@ -31,12 +43,26 @@ header {
             justify-content: space-between;
     
             .about__item {
-                flex: 0 0 250px;
+                flex: 0 1 250px;
                 border-bottom: 1px solid #ffffff;
-    
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border-bottom-color: $secondaryColor;
+                }
+
                 p {
                     padding-bottom: 15px;
+                    transition: all 0.2s ease-in-out;
+                   
+                    &:hover {
+                        transform: translateY(-2vh);
+                    }
                 }
+            }
+
+            .about__item:nth-child(2) {
+                margin: 0 10px;
             }
         }
     }

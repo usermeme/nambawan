@@ -17,4 +17,20 @@
         position: relative;
         top: 7px;
     }
+
+    @media screen and (max-height: 500px) {
+        line-height: 1.5em;
+        svg {
+            transform: scale(0.7);
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        line-height: 1.5em;
+        width: auto;
+
+        svg {
+            transform: scale(0.7);
+        }
+    }
 }
