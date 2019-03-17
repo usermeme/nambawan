@@ -1,0 +1,15 @@
+.slider-buttons {
+
+    button {
+        cursor: pointer;
+        background-color: #ffffff;
+        border: none;
+        height: 60px;
+        width: 40px;
+        margin: 0 -2px;
+    }
+
+    button:hover {
+        background-color: #f0f0f0;
+    }
+}
