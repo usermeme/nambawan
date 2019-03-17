@@ -8,12 +8,20 @@ aside {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    z-index: 100;
+    transition: all 1s ease;
 
     nav {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        ul {
+            li {
+                padding: 2vh 0;
+            }
+        }
     }
 
     .aside-menu {
