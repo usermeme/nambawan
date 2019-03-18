@@ -1,12 +1,18 @@
 import Menu from './menu/Menu';
+import Slider from './slider/Slider';
 
 export default class App {
   constructor() {
     this.menu = new Menu();
+    this.firstSlider = new Slider(document.querySelector('.achievement-slider-item:first-child'));
+    this.secondSlider = new Slider(document.querySelector('.achievement-slider-item:last-child'));
     this.scroller = document.documentElement.scrollTop;
   }
 
   start() {
+    this.firstSlider.changeSlide();
+    this.secondSlider.changeSlide();
+
     document.addEventListener('scroll', () => {
       const newScroll = document.documentElement.scrollTop;
       const isScrollRange = (this.scroller >= 0 && this.scroller < document.querySelector('#card').offsetTop);
@@ -28,6 +34,22 @@ export default class App {
       while (tar !== document) {
         if (tar === this.menu.aside) {
           this.menu.change(e.target);
+        }
+
+        if (tar === this.firstSlider.prevButton) {
+          this.firstSlider.prev();
+        }
+
+        if (tar === this.secondSlider.prevButton) {
+          this.secondSlider.prev();
+        }
+
+        if (tar === this.firstSlider.nextButton) {
+          this.firstSlider.next();
+        }
+
+        if (tar === this.secondSlider.nextButton) {
+          this.secondSlider.next();
         }
 
         tar = tar.parentNode;
