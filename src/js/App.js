@@ -15,14 +15,12 @@ export default class App {
 
     document.addEventListener('scroll', () => {
       const newScroll = document.documentElement.scrollTop;
-      const isScrollRange = (this.scroller >= 0 && this.scroller < document.querySelector('#card').offsetTop);
 
-      if (isScrollRange) {
-        if (newScroll > this.scroller) {
-          App.jumpTo('#card');
-        } else {
-          App.jumpTo('#about');
-        }
+      if (newScroll > this.scroller && this.scroller === 0) {
+        App.jumpTo('#card');
+      }
+      if (newScroll < this.scroller && this.scroller === document.querySelector('#card').offsetTop) {
+        App.jumpTo('#about');
       }
 
       this.scroller = document.documentElement.scrollTop;
