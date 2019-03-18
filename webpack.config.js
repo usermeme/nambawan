@@ -57,8 +57,16 @@ module.exports = {
         }),
       },
       {
-        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        test: /\.(jpe?g|png|gif)(\?[a-z0-9=.]+)?$/,
         loader: 'url-loader?limit=100000&name=./imgs/[hash].[ext]',
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [
+          {
+            loader: 'file-loader?name=./fonts/Raleway/[name].[ext]',
+          },
+        ],
       },
     ],
   },

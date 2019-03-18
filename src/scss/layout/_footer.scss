@@ -1,0 +1,13 @@
+footer {
+    background-color: $footerColor;
+
+    .container {
+        display: flex;
+        padding: 7vh 3vw;
+        justify-content: space-around;
+
+        p {
+            margin: 1em 0;
+        }
+    }
+}

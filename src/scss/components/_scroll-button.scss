@@ -1,0 +1,36 @@
+.scroll-button {
+    position: relative;
+    cursor: pointer;
+    background-color: $secondaryColor;
+    width: 270px;
+    line-height: 63px;
+    text-align: center;
+    border: none;
+    align-self: flex-end;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color:  rgba($secondaryColor, 0.8);
+    }
+
+    svg {
+        position: relative;
+        top: 7px;
+    }
+
+    @media screen and (max-height: 500px) {
+        line-height: 1.5em;
+        svg {
+            transform: scale(0.7);
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        line-height: 1.5em;
+        width: auto;
+
+        svg {
+            transform: scale(0.7);
+        }
+    }
+}

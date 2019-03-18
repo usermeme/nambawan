@@ -1,0 +1,26 @@
+* {
+    outline: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-left: 78px;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 50px;
+    }
+
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: $containerWidth;
+    padding: 0 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

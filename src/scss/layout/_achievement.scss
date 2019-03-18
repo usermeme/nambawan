@@ -1,0 +1,103 @@
+#achievement {
+
+    h2 {
+        margin: 12vh 0;
+    }
+
+    .achievement-data {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 20vh;
+
+        .achievement-text-item {
+            h3 {
+                padding-top: 107px;
+                display: inline-block;
+                max-width: 260px;
+            }
+        }
+
+        .achievement-slider-item {
+            
+            figcaption {
+                width: 15em;
+                margin: 21px auto 0;
+            }
+
+            .achievement-item__information {
+                position: relative;
+    
+                .achievement__slider-counter {
+                    position: absolute;
+                    top: 0;
+                    left: -1.5em;
+                    transform-origin: 100% 0;
+                    transform: rotate(-90deg);
+                }
+    
+                .achievement-slider-item__description {
+                    position: absolute;
+                    bottom: 0;
+                    right: -2.5em;
+                    transform-origin: 10% 0;
+                    transform: rotate(-90deg);
+                }
+    
+                .slider-buttons {
+                    position: absolute;
+                    top: 0;
+                    right: 36px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+            grid-template-columns: 600px;
+            grid-template-rows: repeat(4, 1fr);
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            justify-content: center;
+
+
+            .achievement-slider-item {
+                
+                figcaption {
+                    width: auto;
+                }
+
+                .achievement-item__information {
+                    position: relative;
+                    
+                    .achievement-description {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .achievement__slider-counter {
+                            position: static;
+                            transform-origin: 100% 0;
+                            transform: none;
+                        }
+            
+                        .achievement-slider-item__description {
+                            position: static;
+                            transform-origin: 10% 0;
+                            transform: none;
+                        }
+                    }
+        
+        
+                    .slider-buttons {
+                        top: auto;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
