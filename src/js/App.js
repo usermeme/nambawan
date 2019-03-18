@@ -6,25 +6,11 @@ export default class App {
     this.menu = new Menu();
     this.firstSlider = new Slider(document.querySelector('.achievement-slider-item:first-child'));
     this.secondSlider = new Slider(document.querySelector('.achievement-slider-item:last-child'));
-    this.scroller = document.documentElement.scrollTop;
   }
 
   start() {
     this.firstSlider.changeSlide();
     this.secondSlider.changeSlide();
-
-    document.addEventListener('scroll', () => {
-      const newScroll = document.documentElement.scrollTop;
-
-      if (newScroll > this.scroller && this.scroller === 0) {
-        App.jumpTo('#card');
-      }
-      if (newScroll < this.scroller && this.scroller === document.querySelector('#card').offsetTop) {
-        App.jumpTo('#about');
-      }
-
-      this.scroller = document.documentElement.scrollTop;
-    });
 
     document.addEventListener('click', (e) => {
       let tar = e.target;
