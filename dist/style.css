@@ -755,7 +755,9 @@ footer {
     position: relative;
     min-width: 100%;
     width: 100%;
-    right: 0%; }
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   @media screen and (max-width: 600px) {
     .achievement-slides {
       max-width: 600px; } }
